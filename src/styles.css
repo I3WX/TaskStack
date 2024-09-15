@@ -128,7 +128,7 @@ header h1 {
 }
 
 /* Modal for adding/editing todos */
-.modal {
+.modal{
     display: none;
     position: fixed;
     top: 0;
@@ -175,4 +175,32 @@ form textarea {
 
 .primary-btn:hover {
     background-color: #2a369d;
+}
+/* Buttons for edit and delete */
+.Btns {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.edit-btn img,
+.delete-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Optional: Add hover effects */
+.edit-btn:hover img {
+    filter: brightness(0.8);
+}
+
+.delete-btn:hover img {
+    filter: brightness(0.8);
 }
