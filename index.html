@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo List</title>
+    <link rel="stylesheet" href="84bb4fc080631c2605f1.css">
+<script defer src="main.js"></script></head>
+<body>
+    <div class="container">
+        <!-- Sidebar for Projects -->
+        <aside class="sidebar">
+            <h2>Projects</h2>
+            <ul id="project-list">
+                <li class="activeProject">Default Project</li>
+                <!-- Add dynamically created projects here -->
+            </ul>
+            <button id="add-project-btn" class="btn">+ New Project</button>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header>
+                <h1 id="project-title">Default Project</h1>
+                <button id="add-todo-btn" class="btn primary-btn">+ Add Todo</button>
+            </header>
+            <section id="todo-list">
+                <!-- Todos will be dynamically inserted here -->
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal for Adding/Editing Todos -->
+    <div id="todo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Add/Edit Todo</h2>
+            <form id="todo-form">
+                <input type="text" id="todo-title" placeholder="Title" required>
+                <textarea id="todo-description" placeholder="Description"></textarea>
+                <input type="date" id="todo-due-date" required>
+                <select id="todo-priority" required>
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button type="submit" class="btn primary-btn">Save Todo</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="31d6cfe0d16ae931b73c.js"></script>
+</body>
+</html>
