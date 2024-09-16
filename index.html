@@ -11,8 +11,7 @@
         <aside class="sidebar">
             <h2>Projects</h2>
             <ul id="project-list">
-                <li class="activeProject">Default Project</li>
-                <!-- Add dynamically created projects here -->
+                <!-- Projects will be dynamically loaded here -->
             </ul>
             <button id="add-project-btn" class="btn">+ New Project</button>
         </aside>
@@ -20,8 +19,8 @@
         <!-- Main Content Area -->
         <main class="main-content">
             <header>
-                <h1 id="project-title">Default Project</h1>
-                <button id="add-todo-btn" class="btn primary-btn">+ Add Todo</button>
+                <h1 id="project-title">No Project Selected</h1>
+                <button id="add-todo-btn" class="btn primary-btn" disabled>+ Add Todo</button>
             </header>
             <section id="todo-list">
                 <!-- Todos will be dynamically inserted here -->
@@ -48,6 +47,16 @@
         </div>
     </div>
 
-    <script src="943e11c8fb4bcca74398.js"></script>
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-project-modal">&times;</span>
+            <h2>Add Project</h2>
+            <form id="project-form">
+                <input type="text" id="project-title-input" placeholder="Project Name" required>
+                <button type="submit" id="AddProjectBTN" class="btn primary-btn">Save Project</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
