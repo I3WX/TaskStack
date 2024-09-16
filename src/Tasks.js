@@ -30,5 +30,3 @@ editProperties(properties) {
     return data;
   }
 }
-
-

@@ -1,7 +1,7 @@
 import "./styles.css";
 import deleteImgSrc from "./image/icons8-delete.svg";
 import editImgSrc from "./image/icons8-edit.svg";
-import { Tasks } from "./Task";
+import { Tasks } from "./Tasks.js";
 // Get DOM elements
 const addTodoBtn = document.getElementById("add-todo-btn");
 const projectTitle = document.getElementById("project-title");
@@ -151,7 +151,7 @@ function handleSaveProject(event) {
 }
 
 /**
- * Creates and appends a project element to the project list.
+ * Creates and appends` a project element to the project list.
  */
 function createProjectElement(project) {
     const projectItem = document.createElement("li");
